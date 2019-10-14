@@ -30,6 +30,7 @@
 //   {{message}}
 //   <app></app>
 // </div>
+Vue.config.productionTip = false
 
 
 import Vue from 'vue/dist/vue.esm'
