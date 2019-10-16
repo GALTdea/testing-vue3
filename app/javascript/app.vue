@@ -6,11 +6,7 @@
 
 <script>
 export default {
-  data: function () {
-    return {
-      message: "Hello Vue from component!"
-    }
-  }
+  props: ["message"]
 }
 </script>
 

@@ -5,18 +5,18 @@
 // like app/views/layouts/application.html.erb.
 // All it does is render <div>Hello Vue</div> at the bottom of the page.
 
-// import Vue from 'vue'
-// import App from '../app.vue'
+import Vue from 'vue'
+import App from '../app.vue'
  Vue.config.productionTip = false
 
-// document.addEventListener('DOMContentLoaded', () => {
-//   const app = new Vue({
-//     render: h => h(App)
-//   }).$mount()
-//   document.body.appendChild(app.$el)
+document.addEventListener('DOMContentLoaded', () => {
+  const app = new Vue({
+    render: h => h(App)
+  }).$mount()
+  document.body.appendChild(app.$el)
 
-//   console.log(app)
-// })
+  console.log(app)
+})
 
 
 // The above code uses Vue without the compiler, which means you cannot
@@ -34,18 +34,18 @@
 // Vue.config.productionTip = false
 
 
-import Vue from 'vue/dist/vue.esm'
-import App from '../app.vue'
+// import Vue from 'vue/dist/vue.esm'
+// import App from '../app.vue'
 
-document.addEventListener('DOMContentLoaded', () => {
-  const app = new Vue({
-    el: '#hello',
-    data: {
-      message: "Can you say hello?"
-    },
-    components: { App }
-  })
-})
+// document.addEventListener('DOMContentLoaded', () => {
+//   const app = new Vue({
+//     el: '#hello',
+//     data: {
+//       message: "Can you say hello?"
+//     },
+//     components: { App }
+//   })
+// })
 
 
 //
