@@ -4,10 +4,10 @@
 // to the head of your layout file,
 // like app/views/layouts/application.html.erb.
 // All it does is render <div>Hello Vue</div> at the bottom of the page.
-
+Vue.config.productionTip = false
 import Vue from 'vue'
 import App from '../app.vue'
- Vue.config.productionTip = false
+ 
 
 document.addEventListener('DOMContentLoaded', () => {
   const app = new Vue({

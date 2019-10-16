@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <p>{{ message }}</p>
+    <h1>Testing from App component app.vue</h1>
   </div>
 </template>
 
