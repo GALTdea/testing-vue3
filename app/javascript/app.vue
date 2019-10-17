@@ -1,15 +1,45 @@
 <template>
-  <div id="app">
-    <p>{{ message }}</p>
-    <h1>Testing from App component app.vue</h1>
-  </div>
+	<div id="app">
+	  	<!-- call the todos and pass in todos from the data. brings the data to the component. n this case it's being passed in a a prop -->
+	    <Todos v-bind:todos="todos" />
+    </div>
 </template>
 
 <script>
-export default {
-  props: ["message"]
-}
+import Todos from './Todos';
+
+  export default {
+    name: "app",
+    
+    components: {
+    	Todos
+    },
+
+    data() {
+      return {
+        todos: [
+        {
+          id: 1,
+          title: "Todo 1",
+          completed: false
+        },
+        {
+          id: 2,
+          title: "Todo 2",
+          completed: false
+        },
+        {
+          id: 3,
+          title: "Todo 3",
+          completed: false
+        },
+
+        ]
+      }
+    },
+  }
 </script>
+
 
 <style scoped>
 p {
