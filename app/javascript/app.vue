@@ -1,7 +1,7 @@
 <template>
 	<div id="app">
 	  	<!-- call the todos and pass in todos from the data. brings the data to the component. n this case it's being passed in a a prop -->
-	    <Todos v-bind:todos="todos" />
+	    <Todos v-bind:todos="todos" v-on:del-todo="deleteTodo" />
     </div>
 </template>
 
@@ -34,8 +34,14 @@ import Todos from './Todos';
           completed: false
         },
 
-        ]
+        ], 
       }
+    },
+
+    methods: {
+		deleteTodo(id){
+	    		this.todos = this.todos.filter(todo => todo.id !== id)
+	    	}
     },
   }
 </script>

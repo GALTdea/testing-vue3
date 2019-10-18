@@ -3,7 +3,11 @@
   <div class="todo-item" v-bind:class="{'is-complete':todo.completed}">
     <p> 
       <input type="checkbox" v-on:change="markComplete" >
-      {{todo.title}} 
+      {{todo.title}}
+      <!-- this will emit and event, in this case the click, we need to give it a name "del-todo" we can also emit parameters, todo.id because we need to know which one we're deleting -->
+      <button @click="$emit('del-todo', todo.id)" class="del">x</button>
+      <!-- to catch the emit we go to the app.vue component tag and call it there -->
+
     </p>
   </div>
 </template>
