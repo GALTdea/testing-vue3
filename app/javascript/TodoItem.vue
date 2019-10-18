@@ -1,7 +1,10 @@
 <template>
   <!-- v-binding a css class on condition that todo.iscomplete -->
   <div class="todo-item" v-bind:class="{'is-complete':todo.completed}">
-    <p> {{todo.title}} </p>
+    <p> 
+      <!-- <input type="checkbox" v-on:change="markComplete" > -->
+      {{todo.title}} 
+    </p>
   </div>
 </template>
 
