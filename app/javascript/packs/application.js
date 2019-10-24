@@ -3,24 +3,9 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
-// makes vue devtool available in production. 
-Vue.config.productionTip = false
+// console.log('Hello World from Webpacker')
 
 
-import Vue from 'vue/dist/vue.esm'
-
-import TurbolinksAdapter from 'vue-turbolinks';
-Vue.use(TurbolinksAdapter)
-
-import App from '../app.vue'
-
-Vue.component('app', App)
-
-document.addEventListener('turbolinks:load', () => {
-  const app = new Vue({
-    el: '[data-behavior="vue"]',
-  })
-})
 
 // Vue.config.productionTip = false
 // import Vue from 'vue'

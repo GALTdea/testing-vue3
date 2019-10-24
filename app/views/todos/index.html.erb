@@ -1,0 +1,42 @@
+<!-- <div class="props">
+	<%# props = {
+	    todos: @todos
+	  }.to_json
+	%>
+	<div id="todoApp" data="<%#= props %>"></div>
+
+</div> -->
+
+<%#= content_tag :div,
+  nil,
+  id: "user-card",
+  data: { username: @user.name }
+ %>
+
+<%#= content_tag :div,
+  id: "todoApp",
+  data: {
+    todos: @todos.to_json(),
+  } do %>
+<!-- <h4>Todos</h4>
+  
+  <div v-for="todo in todos">
+      {{ todo.title }} 
+    <hr />
+  </div> -->
+
+
+
+<%# end %>
+
+<h1>JSON Todos</h1>
+<%#= @todos.to_json() %>
+
+<br>
+
+
+<br>
+
+
+
+  

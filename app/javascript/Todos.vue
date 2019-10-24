@@ -8,6 +8,9 @@
 </template>
 
 <script>
+  // const element = document.getElementById("todoApp")
+  // const props = JSON.parse(element.getAttribute('data'))
+  
   import TodoItem from './TodoItem.vue';
 
   export default {
