@@ -1,16 +1,16 @@
 
 <template>
-	<div id="app">
-		<AddTodo v-on:add-todo="" />
+	<!-- <div id="app"> -->
+		<!-- <AddTodo v-on:add-todo="" /> -->
 	  	<!-- call the todos and pass in todos from the data. brings the data to the component. n this case it's being passed in a a prop -->
-	    <Todos v-bind:todos="todos" v-on:del-todo="deleteTodo" />
-    </div>
+	    <!-- <Todos v-bind:todos="todos" v-on:del-todo="deleteTodo" /> -->
+    <!-- </div> -->
 </template>
 
 <script>
-import Todos from './Todos';
-import AddTodo from './AddTodo';
-import VueResource from 'vue-resource'
+// import Todos from './Todos';
+// import AddTodo from './AddTodo';
+// import VueResource from 'vue-resource'
 //Vue.http.headers.common['X-CSRF-Token'] = document.querySelector('meta[name="csrf-token"]').getAttribute('content')
 // import axios from 'axios';
 // const element = document.getElementById("todoApp")
@@ -20,31 +20,32 @@ import VueResource from 'vue-resource'
     name: "app",
     props: ['todos'],
     components: {
-    	Todos,
-    	AddTodo,
+    	// Todos,
+    	// AddTodo,
 
     },
 
     data() {
       return {
-        title: "",
+        // title: "",
 
       }
     },
 
     methods: {
-		deleteTodo(id){
-	    		this.todos = this.todos.filter(todo => todo.id !== id)
-	    	}
-    },
+		// deleteTodo(id){
+	 //    		this.todos = this.todos.filter(todo => todo.id !== id)
+	 //    	}
+  //   },
 
-    addTodo(newTodo){
-    	this.todos = [...this.todos, newTodo]
-    }, 
+    // addTodo(newTodo){
+    // 	this.todos = [...this.todos, newTodo]
+    // }, 
 
-    created(){
-    	// Vue.http.headers.common['X-CSRF-Token'] = document.querySelector('meta[name="csrf-token"]').getAttribute('content')
-    	// Axios.defaults.headers.common['X-CSRF-TOKEN'] = token;
+    // created(){
+    // 	// Vue.http.headers.common['X-CSRF-Token'] = document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+    // 	// Axios.defaults.headers.common['X-CSRF-TOKEN'] = token;
+    // }
     }
   }
 

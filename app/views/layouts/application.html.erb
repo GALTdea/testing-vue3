@@ -8,13 +8,15 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     
+    <%= stylesheet_pack_tag 'hello_vue', media: 'all' %>
     <%= javascript_pack_tag 'hello_vue' %>
-    <%= stylesheet_pack_tag 'hello_vue' %>
   </head>
 
   <body>
+    <div data-behavior="vue">
     <%= link_to "new", new_todo_path %>
       <%= yield %>
-    
+    </div>
   </body>
+
 </html>

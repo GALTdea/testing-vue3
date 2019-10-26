@@ -4,22 +4,22 @@ require("@rails/activestorage").start()
 require("channels")
 
 // console.log('Hello World from Webpacker')
+// Vue.config.devtools = true
+// Vue.config.productionTip = true
+// Vue.use(TurbolinksAdapter)
+// import TurbolinksAdapter from 'vue-turbolinks';
+
+// import Vue from 'vue/dist/vue.esm'
+// import App from '../app.vue'
 
 
+// Vue.component('app', App)
 
-Vue.config.productionTip = false
-import Vue from 'vue'
-import App from '../app.vue'
- 
-
-document.addEventListener('DOMContentLoaded', () => {
-  const app = new Vue({
-    render: h => h(App)
-  }).$mount()
-  document.body.appendChild(app.$el)
-
-  console.log(app)
-})
+// document.addEventListener('turbolinks:load', () => {
+//   const app = new Vue({
+//     el: '[data-behavior="vue"]',
+//   })
+// })
 
 
 

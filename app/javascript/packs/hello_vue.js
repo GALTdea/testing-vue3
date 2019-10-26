@@ -19,7 +19,7 @@ document.addEventListener('turbolinks:load', () => {
  		var id = element.dataset.id
  		var todo = JSON.parse(element.dataset.todo)
  		var todo_items_attributes = JSON.parse(element.dataset.todoItemsAttributes)
-    	todo_items_attributes.forEach(function(todo_item) { todo_item._destroy = null })
+    	todo_items_attributes.forEach(function(item) { item._destroy = null })
    		todo.todo_items_attributes = todo_items_attributes
 
 		const app = new Vue({
