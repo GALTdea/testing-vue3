@@ -8,12 +8,13 @@
 <!-- <app  v-bind:message="[234, 266, 273]" ></app> -->
 
 <!-- <app  v-bind:message="<%= @messages.to_json %>" ></app> -->
-<% @messages.each do |msg| %>
-  <%# if msg.title !== nil %>
-    <app  v-bind:message="<%= msg.title.to_json %>" ></app>
-  <%# end %>
+<% if @messages.any? %>
+  <% @messages.each do |msg| %>
+    
+      <app  v-bind:message="<%= msg.title.to_json %>" ></app>
+    
+  <% end %>
 <% end %>
-
 <!-- <blog-post v-bind:comment-ids="post.commentIds"></blog-post> -->
   
 
