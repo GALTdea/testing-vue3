@@ -1,31 +1,31 @@
 
-<app></app>
-<div class="container" >
+<!-- <app></app> -->
+<!-- <div class="container" > -->
   
 
-<div>Todos</div>
-<%= content_tag :div,
+<!-- <div>Todos</div> -->
+<%#= content_tag :div,
   id: "todo-form",
   data: {
   	id: @todo.id,
   	todo: @todo.to_json(exept:[:created_at, :updated_at]),
   	todo_items_attributes: @todo.todo_items.to_json(exept: [:todo_id,:created_at, :updated_at]),
   } do %>
-<label>Todo Today</label>
+<!-- <label>Todo Today</label> -->
   <!-- v-model="todo.title" connects input to vue data, will look for the todo propierty in vue and inside of the todo propierty it'll look for the title propierty. it'll alter the state of the vue when edditing it'll update vue and kip in sink. basically data binding of angular -->
-  <input type="text" v-model="todo.title" />
+  <!-- <input type="text" v-model="todo.title" /> -->
 
-  <h4>Items</h4>
-  <div v-for="(todo_item, index) in todo.todo_items_attributes" >
-    <label>Item</label>
+  <!-- <h4>Items</h4> -->
+  <!-- <div v-for="(todo_item, index) in todo.todo_items_attributes" > -->
+    <!-- <label>Item</label> -->
     <!-- v-model recognizes the givven iteration of todo_item  -->
-    <input type="text" v-model="todo_item.description">
-  </div>
+    <!-- <input type="text" v-model="todo_item.description"> -->
+  <!-- </div> -->
   
 
- <button v-on:click="addItem" >Add item</button>
+ <!-- <button v-on:click="addItem" >Add item</button> -->
   
-<% end %>
+<%# end %>
 
 
 
@@ -51,4 +51,4 @@
 
 
 
-  </div>
+  <!-- </div> -->

@@ -1,0 +1,58 @@
+<p id="notice"><%= notice %></p>
+<!-- <app :message="<%#= 'message'.to_json %>"  > -->
+
+<!-- <app  :messages="<%= @messages.to_json %>" ></app> -->
+
+<!-- <app  v-bind:message="[234, 266, 273]" ></app> -->
+
+<!-- <app  v-bind:message="[234, 266, 273]" ></app> -->
+
+<!-- <app  v-bind:message="<%= @messages.to_json %>" ></app> -->
+<% @messages.each do |msg| %>
+  <%# if msg.title !== nil %>
+    <app  v-bind:message="<%= msg.title.to_json %>" ></app>
+  <%# end %>
+<% end %>
+
+<!-- <blog-post v-bind:comment-ids="post.commentIds"></blog-post> -->
+  
+
+</app>
+
+
+<br>
+<br>
+<br>
+<%= @messages.to_json %>
+
+<!-- <h1>Messages</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Msg1</th>
+      <th>Msg2</th>
+      <th>Msg3</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <%# @messages.each do |message| %>
+      <tr>
+        <td><%#= message.title %></td>
+        <td><%#= message.msg1 %></td>
+        <td><%#= message.msg2 %></td>
+        <td><%#= message.msg3 %></td>
+        <td><%#= link_to 'Show', message %></td>
+        <td><%#= link_to 'Edit', edit_message_path(message) %></td>
+        <td><%#= link_to 'Destroy', message, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <%# end %>
+  </tbody>
+</table>
+
+<br>
+ -->
+<%#= link_to 'New Message', new_message_path %>

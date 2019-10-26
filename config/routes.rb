@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :messages
   resources :todo_items
   root 'todos#new'
   resources :todos
