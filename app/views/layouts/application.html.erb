@@ -17,7 +17,7 @@
     <%= link_to "message indexs", messages_path %>
     <div data-behavior="vue">
     
-    <!-- <app :message="<%#= "testing hello".to_json %>" ></app> -->
+    <app :message="<%= "testing hello".to_json %>" ></app>
       <%= yield %>
     </div>
   </body>
