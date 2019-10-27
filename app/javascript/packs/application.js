@@ -19,7 +19,7 @@ document.addEventListener('turbolinks:load', () => {
     el: '[data-behavior="vue"]',
   })
 
-  // console.log(message)
+ 	console.log(app)
 })
 
 

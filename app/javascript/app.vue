@@ -1,19 +1,19 @@
 <template>
   <div id="app">
     <p>This is a test</p>
-    <p>{{ title }}</p>
+    <p>{{ message }}</p>
   </div>
 </template>
 
 <script>
 export default {
-// props: ['message'],
-props: {
-  title: String,
-  msg1: String,
-  msg2: String,
-  msg3: String,
-  }
+ props: ['message'],
+// props: {
+//   title: String,
+//   msg1: String,
+//   msg2: String,
+//   msg3: String,
+//   }
 }
 </script>
 
