@@ -16,23 +16,23 @@
 // const element = document.getElementById("todoApp")
 // const props = JSON.parse(element.getAttribute('data'))
 
-  export default {
-    name: "app",
-    props: ['todos'],
-    components: {
-    	// Todos,
-    	// AddTodo,
+  // export default {
+  //   name: "app",
+  //   props: ['todos'],
+  //   components: {
+  //   	// Todos,
+  //   	// AddTodo,
 
-    },
+  //   },
 
-    data() {
-      return {
-        // title: "",
+    // data() {
+    //   return {
+    //     // title: "",
 
-      }
-    },
+    //   }
+    // },
 
-    methods: {
+    // methods: {
 		// deleteTodo(id){
 	 //    		this.todos = this.todos.filter(todo => todo.id !== id)
 	 //    	}
@@ -46,15 +46,15 @@
     // 	// Vue.http.headers.common['X-CSRF-Token'] = document.querySelector('meta[name="csrf-token"]').getAttribute('content')
     // 	// Axios.defaults.headers.common['X-CSRF-TOKEN'] = token;
     // }
-    }
-  }
+    // }
+  // }
 
 
 </script>
 
 
 <style scoped>
-* {
+/** {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -76,5 +76,5 @@
 
   .btn:hover {
     background: #666 !important;
-  }
+  }*/
 </style>
