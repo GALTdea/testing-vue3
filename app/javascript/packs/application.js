@@ -8,8 +8,7 @@ import TurbolinksAdapter from 'vue-turbolinks'
 import Vue from 'vue/dist/vue.esm'
 import App from '../app.vue'
 
-Vue.config.devtools = true
-Vue.config.productionTip = true
+
 Vue.use(TurbolinksAdapter)
 
 
