@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :messages
   resources :todo_items
-  root 'todos#new'
+  root 'messages#index'
   resources :todos
    # root 'landing#index'
   get 'landing/index'
