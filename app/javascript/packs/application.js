@@ -3,6 +3,9 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
+import "core-js/stable";
+import "regenerator-runtime/runtime";
+
 // console.log('Hello World from Webpacker')
 import TurbolinksAdapter from 'vue-turbolinks'
 import Vue from 'vue/dist/vue.esm'
