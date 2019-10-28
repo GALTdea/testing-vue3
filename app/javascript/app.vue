@@ -1,7 +1,8 @@
 <template>
   <div id="app">
   	<p>{{ message }}</p>
-	  <div>
+  	<p>{{ message1 }}</p>
+	  <!-- <div> -->
 	     <!-- <form @submit="addItem"> 
 	    	 <div>Message:{{ message }}</div>
 
@@ -12,7 +13,7 @@
 
 	    <!-- <input v-model="message" placeholder="edit me"> -->
 		<!-- <p>Message is: {{ message }}</p> -->
-	  </div>
+	  <!-- </div> -->
   	<!-- 	
   	  <div class="msg">
   	  	<div>title</div>
@@ -31,7 +32,7 @@
 
 <script>
 	export default {
-		props: ['message'],
+		props: ['message1', 'message'],
 
 		// data: {
 		//  	message: {
