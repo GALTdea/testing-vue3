@@ -1,33 +1,74 @@
 <template>
   <div id="app">
-    <p>This is a test</p>
-    <p>{{ message }}</p>
+  	<p>{{ message }}</p>
+	  <div>
+	     <!-- <form @submit="addItem"> 
+	    	 <div>Message:{{ message }}</div>
+
+	      <input  v-model="message"  placeholder="Add Title...">
+	     
+	      <input type="submit" value="Submit" class="btn">
+	    </form> -->
+
+	    <!-- <input v-model="message" placeholder="edit me"> -->
+		<!-- <p>Message is: {{ message }}</p> -->
+	  </div>
+  	<!-- 	
+  	  <div class="msg">
+  	  	<div>title</div>
+	    {{ message.title }}
+
+	    <div>msg1</div>
+	    {{ message.msg1 }}
+
+	    <div>msg2</div>
+	    {{ message.msg2 }}
+	  </div> -->
+    
+    	
   </div>
 </template>
 
 <script>
-export default {
- props: ['message'],
-// props: {
-//   title: String,
-//   msg1: String,
-//   msg2: String,
-//   msg3: String,
-//   }
-}
+	export default {
+		props: ['message'],
+
+		// data: {
+		//  	message: {
+		//         title: '',
+		//         msg1: '',
+		//         msg2: '',
+		//         msg3: '',
+		//       }
+		// },
+
+		// methods: {
+		// 	addItem: function() {
+		// 		this.message.push({
+		//         	id: null,
+		//         	title: '',
+		//         	msg1: '',
+		//         	msg2: '',
+		//         	msg3: '',
+		//         })
+		        
+	 //      	}
+    
+
+		// }
+	}	
+
+
 </script>
 
 <style scoped>
 p {
-  font-size: 2em;
+  font-size: 1em;
   text-align: center;
+}
+.msg{
+	text-align: center;
 }
 </style>
 
 
-
-
-<!-- t.string "title"
-    t.text "msg1"
-    t.text "msg2"
-    t.text "msg3 -->

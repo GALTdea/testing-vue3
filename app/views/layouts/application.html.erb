@@ -8,16 +8,16 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     
-    <%= stylesheet_pack_tag 'hello_vue', media: 'all' %>
-    <%= javascript_pack_tag 'hello_vue' %>
+    <%#= stylesheet_pack_tag 'hello_vue', media: 'all' %>
+    <%#= javascript_pack_tag 'hello_vue' %>
   </head>
 
   <body>
     <%= link_to "new", new_message_path %> <br>
-    <%= link_to "message indexs", messages_path %>
+    <%= link_to "message indexs", messages_path %> <br>
     <div data-behavior="vue">
     
-    <app :message="<%= "testing hello".to_json %>" ></app>
+    <!-- <app :message="<%#= "testing hello".to_json %>" ></app> -->
       <%= yield %>
     </div>
   </body>

@@ -9,8 +9,13 @@
 
 
 
-# messages = Message.create([{ title: 'Star Wars' },
-						#    { title: 'Lord of the Rings' },
-						#    { title: 'Lord of the Rings' },
-						#    { title: 'Lord of the Rings' },
-						# ])
+messages = Message.create!([
+							{ title: 'Star Wars', msg1: 'test1', msg2: 'test1', msg3: 'test1'   },
+						    { title: 'Lord of the Rings', msg1: 'test1', msg2: 'test1', msg3: 'test1' },
+						    { title: 'Lord of the Rings', msg1: 'test1', msg2: 'test1', msg3: 'test1' },
+						    { title: 'Lord of the Rings', msg1: 'test1', msg2: 'test1', msg3: 'test1' },
+						 ])
+
+
+
+
