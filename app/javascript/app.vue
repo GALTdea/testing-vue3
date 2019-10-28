@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-  	<p>{{ message }}</p>
+  	
   	<p>{{ message1 }}</p>
 	  <!-- <div> -->
 	     <!-- <form @submit="addItem"> 
@@ -32,7 +32,7 @@
 
 <script>
 	export default {
-		props: ['message1', 'message'],
+		props: [ 'message1'],
 
 		// data: {
 		//  	message: {
