@@ -1,14 +1,16 @@
 <template>
   <div id="app">
   	<p>{{ message }}</p>
+
+  <input v-model="message" placeholder="edit me">
+  <!-- <p>Message is: {{ message }}</p> -->
   </div>
 </template>
 
 <script>
 	export default {
 		props: [ 'message'],
-
-		
+	
 	}	
 
 
