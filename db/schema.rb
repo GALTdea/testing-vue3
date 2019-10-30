@@ -10,10 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_26_203753) do
+ActiveRecord::Schema.define(version: 2019_10_29_183740) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "entries", force: :cascade do |t|
+    t.text "title"
+    t.bigint "message_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["message_id"], name: "index_entries_on_message_id"
+  end
 
   create_table "messages", force: :cascade do |t|
     t.string "title"
@@ -40,5 +48,6 @@ ActiveRecord::Schema.define(version: 2019_10_26_203753) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "entries", "messages"
   add_foreign_key "todo_items", "todos"
 end
